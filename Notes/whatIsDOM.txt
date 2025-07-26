@@ -19,3 +19,5 @@ The DOM is created as soon as the HTML page loads in the browser and is stored i
 NOTE: DOM and DOM methods are a part of Web APIs and not a part of JavaScript language.
 
 NOTE: APIs stand for Application Programming Interface
+
+NOTE: Use the alt + down arrow to move the current line down 
