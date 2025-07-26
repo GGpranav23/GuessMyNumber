@@ -15,7 +15,7 @@
 //NOTE: Event listener
 
 // Math.random() generates a random number between 0 (inclusive) and 1 (exclusive).
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 // document.querySelector('.number').textContent = secretNumber
 
 
@@ -73,4 +73,6 @@ document.querySelector('.again').addEventListener('click', function(){
     document.querySelector('.number').textContent = '?';
     document.querySelector('.message').textContent = 'Start guessing...';
     document.querySelector('.guess').value = null;
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    
 })
