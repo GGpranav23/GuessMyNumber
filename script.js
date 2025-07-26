@@ -16,7 +16,7 @@
 
 // Math.random() generates a random number between 0 (inclusive) and 1 (exclusive).
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
-document.querySelector('.number').textContent = secretNumber
+// document.querySelector('.number').textContent = secretNumber
 
 
 let score = 20;
@@ -32,7 +32,10 @@ document.querySelector('.check').addEventListener('click', function(){
     if(!guess){
         document.querySelector('.message').textContent = '⛔ No Number!';
     }else if(guess === secretNumber){
+        document.querySelector('.number').textContent = secretNumber;
         document.querySelector('.message').textContent = '🎉 Correct Number!';
+        document.querySelector('body').style.backgroundColor = '#60b347';
+        document.querySelector('.number').style.width = '30rem'
         
     }else if(guess > secretNumber){
         if(score > 1){
@@ -58,4 +61,16 @@ document.querySelector('.check').addEventListener('click', function(){
             document.querySelector('.message').textContent = 'You lose!'
         }
     }
+})
+
+
+// Event for again button
+
+document.querySelector('.again').addEventListener('click', function(){
+    score = 20;
+    document.querySelector('.score').textContent = 20
+    document.querySelector('body').style.backgroundColor = '#222'
+    document.querySelector('.number').textContent = '?';
+    document.querySelector('.message').textContent = 'Start guessing...';
+    document.querySelector('.guess').value = null;
 })
