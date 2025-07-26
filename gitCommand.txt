@@ -8,4 +8,7 @@ git remote -v - Shows all remote repositories and their URLs (fetch and push)
 
 git config --get user.email - Shows the configured Git email address used for commits
 
+
 git config --get user.name - Shows the configured Git username used for commits
+
+git config --global user.email "your.email@example.com" - Sets the Git email address for all repositories
