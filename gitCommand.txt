@@ -1,4 +1,11 @@
 git branch - List all branches
+
 git checkout -b main - Create and switch to new branch 'main'
+
 git branch -d master - Delete the master branch
-git remote -v - To check remote repo you're connected to.
+
+git remote -v - Shows all remote repositories and their URLs (fetch and push)
+
+git config --get user.email - Shows the configured Git email address used for commits
+
+git config --get user.name - Shows the configured Git username used for commits
