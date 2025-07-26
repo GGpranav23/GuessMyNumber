@@ -68,11 +68,14 @@ document.querySelector('.check').addEventListener('click', function(){
 
 document.querySelector('.again').addEventListener('click', function(){
     score = 20;
-    document.querySelector('.score').textContent = 20
+    document.querySelector('.score').textContent = score;
     document.querySelector('body').style.backgroundColor = '#222'
     document.querySelector('.number').textContent = '?';
     document.querySelector('.message').textContent = 'Start guessing...';
     document.querySelector('.guess').value = null;
+    // Value of an input is always a string, so thats why the empty string value can also be assigned to reset.
+    // document.querySelector('.guess').value = '';
     secretNumber = Math.trunc(Math.random() * 20) + 1;
+    document.querySelector('.number').style.width = '15rem';
     
 })
