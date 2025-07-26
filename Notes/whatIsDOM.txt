@@ -1,0 +1,21 @@
+The technical term for making JavaScript interact with webpages is called DOM Manipulation
+
+NOTE: What is DOM?
+DOM is document object model. It is a structured representation of the HTML documents 
+
+NOTE: DOM allows the JavaScript to access the HTML elements and styles to manipulate them.
+
+NOTE: HTML Documents -----DOM------ JavaScript Code
+
+
+The DOM is created as soon as the HTML page loads in the browser and is stored in a tree structure.
+
+1. When a web browser loads an HTML document, it creates the DOM
+2. The browser automatically converts the HTML document into a DOM tree
+3. Each HTML element becomes a node in this tree structure
+4. This happens before any JavaScript code runs
+5. Once created, JavaScript can then access and manipulate the DOM through various methods and properties
+
+NOTE: DOM and DOM methods are a part of Web APIs and not a part of JavaScript language.
+
+NOTE: APIs stand for Application Programming Interface
