@@ -1,0 +1,4 @@
+git branch - List all branches
+git checkout -b main - Create and switch to new branch 'main'
+git branch -d master - Delete the master branch
+git remote -v - To check remote repo you're connected to.
