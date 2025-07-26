@@ -19,5 +19,11 @@
 
 // When the button is clicked, we log the value of the input filed with class "guess" to the console.
 document.querySelector('.check').addEventListener('click', function(){
-    console.log(document.querySelector('.guess').value);
+    const guess = Number(document.querySelector('.guess').value);
+
+    document.querySelector('.message').textContent = '🎉 Correct Number!';
+
+    if(!guess){
+        document.querySelector('.message').textContent = '⛔ No Number!';
+    }
 })
