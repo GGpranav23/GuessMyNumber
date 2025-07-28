@@ -12,3 +12,5 @@ git config --get user.email - Shows the configured Git email address used for co
 git config --get user.name - Shows the configured Git username used for commits
 
 git config --global user.email "your.email@example.com" - Sets the Git email address for all repositories
+
+git config --global --unset-all user.name - Removes all globally set Git usernames from your configuration (useful when duplicate or conflicting values exist).
